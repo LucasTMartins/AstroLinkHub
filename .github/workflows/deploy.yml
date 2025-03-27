@@ -1,0 +1,54 @@
+name: Deploy Astro to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Build do site
+        run: npm run build
+
+      - name: Adicionar CNAME para domínio personalizado
+        run: echo 'imlucas.dev.br' > dist/CNAME
+
+      - name: Configurar saída para GitHub Pages
+        run: touch dist/.nojekyll
+
+      - name: Upload dos artefatos do GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy para GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

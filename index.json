@@ -1,54 +1,44 @@
 {
   "html": {
-    "lang": "en",
-    "title": "Marcos Carrasco",
-    "description": "Follow me on all my socials",
+    "lang": "pt-BR",
+    "title": "Lucas Martins",
+    "description": "Me siga em todas as redes sociais!",
     "favicon": "/favicon.svg"
   },
   "background": {
-    "firstColor": "#454281",
-    "secondColor": "#B38AC2"
+    "firstColor": "#1e66f5",
+    "secondColor": "#8839ef"
   },
   "header": {
     "image": "/profile.webp",
-    "alt": "The owner of this website.",
-    "title": "Marcos Carrasco",
+    "alt": "O dono do site.",
+    "title": "Lucas Martins",
     "description": "Full Stack Developer",
-    "textColor": "white"
+    "textColor": "#eff1f5"
   },
   "socials": [
     {
       "network": "GitHub",
-      "username": "marcosklender",
-      "url": "https://github.com/marcosklender"
+      "username": "LucasTMartins",
+      "url": "https://github.com/LucasTMartins"
     },
     {
       "network": "LinkedIn",
-      "username": "marcosklender",
-      "url": "https://www.linkedin.com/in/marcosklender/?locale=en_US"
-    },
-    {
-      "network": "Instagram",
-      "username": "marcosklender",
-      "url": "https://www.instagram.com/marcosklender"
+      "username": "LucasTMartins",
+      "url": "https://www.linkedin.com/in/lucastmartins/"
     },
     {
       "network": "Mail",
-      "username": "marcosklender",
-      "url": "mailto:marcosklender@gmail.com"
-    },
-    {
-      "network": "AstroLogo",
-      "username": "Astro Themes",
-      "url": "https://astro.build/themes/author/1479"
+      "username": "LucasTMartins",
+      "url": "mailto:lucastmartins.dev@gmail.com"
     }
   ],
   "featured": [
     {
       "network": "GitHub",
-      "url": "https://github.com/MarcosKlender/AstroLinkHub",
-      "title": "Use this template and star it (:",
-      "textColor": "#FFF",
+      "url": "https://github.com/LucasTMartins",
+      "title": "Me acompanhe no GitHub",
+      "textColor": "#eff1f5",
       "backgroundImage": "https://githubuniverse.com/og-image-24.jpg",
       "backgroundColor": null,
       "borderRadius": ".75rem"
@@ -57,39 +47,39 @@
   "buttons": [
     {
       "network": "LinkedIn",
-      "url": "https://www.linkedin.com/in/marcosklender/?locale=en_US",
-      "title": "Let's connect on LinkedIn",
-      "textColor": "#FFF",
+      "url": "https://www.linkedin.com/in/lucastmartins/",
+      "title": "Me siga no LinkedIn",
+      "textColor": "#eff1f5",
       "backgroundColor": "#000",
       "borderRadius": ".75rem"
     },
     {
-      "network": "Instagram",
-      "url": "https://www.instagram.com/marcosklender",
-      "title": "Follow me on Instagram",
-      "textColor": "#FFF",
+      "network": "Link",
+      "url": "https://blog.imlucas.dev.br",
+      "title": "Visite meu blog",
+      "textColor": "#eff1f5",
+      "backgroundColor": "#000",
+      "borderRadius": ".75rem"
+    },
+    {
+      "network": "User",
+      "url": "https://blog.imlucas.dev.br/pages/who-am-i.html",
+      "title": "Mais sobre mim",
+      "textColor": "#eff1f5",
       "backgroundColor": "#000",
       "borderRadius": ".75rem"
     },
     {
       "network": "Mail",
-      "url": "mailto:marcosklender@gmail.com",
-      "title": "Contact me anytime",
-      "textColor": "#FFF",
-      "backgroundColor": "#000",
-      "borderRadius": ".75rem"
-    },
-    {
-      "network": "AstroLogo",
-      "url": "https://astro.build/themes/author/1479",
-      "title": "See more Astro Themes",
-      "textColor": "#FFF",
+      "url": "mailto:lucastmartins.dev@gmail.com",
+      "title": "Entre em contato",
+      "textColor": "#eff1f5",
       "backgroundColor": "#000",
       "borderRadius": ".75rem"
     }
   ],
   "footer": {
-    "copyright": "Made with 🍺 by MarcosKlender",
-    "url": "https://warpportfolio.netlify.app"
+    "copyright": "Based on AstroLinkHub by MarcosKlender",
+    "url": "https://github.com/MarcosKlender/AstroLinkHub"
   }
 }
