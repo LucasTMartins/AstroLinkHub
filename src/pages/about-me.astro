@@ -1,0 +1,211 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Content } from "../components/about-me.md";
+import { header } from "index.json";
+import { background } from "index.json";
+---
+
+<Layout title="Currículo">
+  <div class="curriculo-wrapper">
+    <div class="curriculo-container">
+      <Content />
+    </div>
+  </div>
+</Layout>
+
+<style
+  define:vars={{
+    corTexto: header.textColor,
+    corPrimaria: background.firstColor,
+    corSecundaria: background.thirdColor,
+  }}
+>
+  :global(html) {
+    background: #1C2541;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .curriculo-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg);
+    padding: 3rem 1rem;
+  }
+  .curriculo-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Cabeçalho */
+  .curriculo-container :global(h1) {
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+    color: var(--corTexto);
+    font-weight: 700;
+  }
+
+  .curriculo-container :global(h1 + p) {
+    font-size: 1.3rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .curriculo-container :global(p) {
+    color: var(--corTexto);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+
+  /* Títulos de Seção */
+  .curriculo-container :global(h2) {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--corTexto);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .curriculo-container :global(h2:first-of-type) {
+    margin-top: 1rem;
+  }
+
+  /* Subtítulos */
+  .curriculo-container :global(h3) {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--corTexto);
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--corTexto);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Parágrafo do resumo */
+  .curriculo-container :global(h2 + p) {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #374151;
+    margin-bottom: 1rem;
+  }
+
+  .curriculo-container :global(h4) {
+    font-size: 1rem;
+    color: var(--corTexto);
+    padding-bottom: 1rem;
+  }
+
+  .curriculo-container :global(h5) {
+    font-size: 0.8rem;
+    color: var(--corTexto);
+  }
+
+  /* BLOCKQUOTES - Experiências Profissionais */
+  .curriculo-container :global(blockquote) {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--corPrimaria) 10%, transparent),
+      color-mix(in srgb, var(--corSecundaria) 8%, transparent)
+    );
+    border-left: 4px solid var(--corTexto);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
+
+  .curriculo-container :global(blockquote:hover) {
+    transform: translateX(4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .curriculo-container :global(blockquote p) {
+    margin: 0.5rem 0;
+    color: var(--corTexto);
+    opacity: 0.95;
+    line-height: 1.6;
+  }
+
+  .curriculo-container :global(blockquote p:first-child) {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .curriculo-container :global(blockquote strong) {
+    color: var(--corTexto);
+    font-weight: 700;
+  }
+
+  /* Links */
+  .curriculo-container :global(ul li) {
+    line-height: 1.7;
+    color: color-mix(in srgb, var(--corTexto) 80%, transparent);
+  }
+  .curriculo-container :global(li strong) {
+    color: var(--corTexto);
+  }
+  .curriculo-container :global(a) {
+    color: var(--corTexto);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .curriculo-container :global(a:hover) {
+    color: var(--corSecundaria);
+    text-decoration: underline;
+  }
+
+  /* Listas */
+  .curriculo-container :global(ul) {
+    list-style: none;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .curriculo-container :global(ul li::before) {
+    content: "▹";
+    color: var(--corTexto);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 0.5rem;
+  }
+
+  /* Datas em itálico */
+  .curriculo-container :global(em) {
+    color: #6b7280;
+    font-size: 0.95rem;
+  }
+
+  /* Tags de habilidades */
+  .curriculo-container :global(strong) {
+    color: var(--corTexto);
+    font-weight: 600;
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .curriculo-wrapper {
+      padding: 1.5rem 1rem;
+    }
+    .curriculo-container {
+      padding: 2rem 1.5rem;
+    }
+    .curriculo-container :global(h1) {
+      font-size: 2rem;
+    }
+    .curriculo-container :global(h2) {
+      font-size: 1.3rem;
+    }
+    .curriculo-container :global(blockquote) {
+      padding: 1.25rem;
+    }
+  }
+</style>

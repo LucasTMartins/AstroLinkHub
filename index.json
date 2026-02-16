@@ -6,15 +6,16 @@
     "favicon": "/favicon.ico"
   },
   "background": {
-    "firstColor": "#1e66f5",
-    "secondColor": "#8839ef"
+    "firstColor": "#1C2541",
+    "secondColor": "#1C2541",
+    "thirdColor": "#1e66f5"
   },
   "header": {
     "image": "/profile.webp",
     "alt": "O dono do site.",
     "title": "Lucas Martins",
-    "description": "Full Stack Developer",
-    "textColor": "#eff1f5"
+    "description": "SAP Full-Stack Developer | ABAP, Fiori & Cloud Solutions",
+    "textColor": "#EDF0F7"
   },
   "socials": [
     {
@@ -37,9 +38,9 @@
     {
       "network": "GitHub",
       "url": "https://github.com/LucasTMartins",
-      "title": "Me acompanhe no GitHub",
-      "textColor": "#eff1f5",
-      "backgroundImage": "https://githubuniverse.com/og-image-24.jpg",
+      "title": "",
+      "textColor": "#EDF0F7",
+      "backgroundImage": "cover.webp",
       "backgroundColor": null,
       "borderRadius": ".75rem"
     }
@@ -49,32 +50,32 @@
       "network": "LinkedIn",
       "url": "https://www.linkedin.com/in/lucastmartins/",
       "title": "Me siga no LinkedIn",
-      "textColor": "#eff1f5",
-      "backgroundColor": "#000",
+      "textColor": "#EDF0F7",
+      "backgroundColor": "#1e66f5",
       "borderRadius": ".75rem"
     },
     {
       "network": "Link",
-      "url": "https://blog.imlucas.dev.br",
-      "title": "Visite meu blog",
-      "textColor": "#eff1f5",
-      "backgroundColor": "#000",
+      "url": "https://dev.to/lucastmartins",
+      "title": "Visite meu perfil no Dev.to",
+      "textColor": "#EDF0F7",
+      "backgroundColor": "#1e66f5",
       "borderRadius": ".75rem"
     },
     {
       "network": "User",
-      "url": "https://blog.imlucas.dev.br/pages/who-am-i.html",
+      "url": "/about-me",
       "title": "Mais sobre mim",
-      "textColor": "#eff1f5",
-      "backgroundColor": "#000",
+      "textColor": "#EDF0F7",
+      "backgroundColor": "#1e66f5",
       "borderRadius": ".75rem"
     },
     {
       "network": "Mail",
       "url": "mailto:lucastmartins.dev@gmail.com",
       "title": "Entre em contato",
-      "textColor": "#eff1f5",
-      "backgroundColor": "#000",
+      "textColor": "#EDF0F7",
+      "backgroundColor": "#1e66f5",
       "borderRadius": ".75rem"
     }
   ],
