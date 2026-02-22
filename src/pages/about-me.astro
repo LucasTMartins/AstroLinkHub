@@ -21,7 +21,7 @@ import { background } from "index.json";
   }}
 >
   :global(html) {
-    background: #1C2541;
+    background: #1c2541;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -206,6 +206,22 @@ import { background } from "index.json";
     }
     .curriculo-container :global(blockquote) {
       padding: 1.25rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .curriculo-wrapper {
+      padding: 0;
+    }
+
+    .curriculo-container {
+      max-width: 100%;
+      width: 100%;
+      padding: 1.5rem 1rem;
+      border-radius: 0;
+      box-shadow: none;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
   }
 </style>
