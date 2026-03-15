@@ -55,14 +55,6 @@
       "borderRadius": ".75rem"
     },
     {
-      "network": "Link",
-      "url": "https://dev.to/lucastmartins",
-      "title": "Visite meu perfil no Dev.to",
-      "textColor": "#EDF0F7",
-      "backgroundColor": "#1e66f5",
-      "borderRadius": ".75rem"
-    },
-    {
       "network": "User",
       "url": "/about-me",
       "title": "Mais sobre mim",
